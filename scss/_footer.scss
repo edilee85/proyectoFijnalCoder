@@ -1,0 +1,24 @@
+.pie{
+	max-width: 1300px;
+	background-image: linear-gradient(to top , $clr-primary-500 ,$clr-accent-000); 
+	&__legales{
+		color:black;
+		font-size: 0.5rem;
+	}
+	&__socialmedia{
+
+	}
+}
+
+/*Version Header Pantallas entre 541 y 768*/
+@media only screen and (min-width: 541px) and (max-width: 768px){
+	.pie__legales{
+		font-size:0.75rem;
+	}
+}
+/*Version Header Pantallas entre 769 y 1300*/
+@media only screen and (min-width: 769px) /*and (max-width: 1300px)*/{
+		.pie__legales{
+		font-size:1rem;
+	}	
+}

@@ -1,0 +1,25 @@
+
+$clr-neutral-100: #191516;
+$clr-primary-400: #F9E7E7;
+$clr-primary-500: #DED6D6;
+$clr-secondary-800: #D2CBCB;
+$clr-secondary-900: #ADA0A6;
+$clr-accent-000:#7D938A;
+$ff-primary:"Roboto",sans-serif;
+$ff-accent:"Lobster", sans-serif;
+
+
+:root {
+	--clr-neutral-100: #191516;
+	--clr-primary-400: #F9E7E7;
+	--clr-primary-500: #DED6D6;
+	--clr-secondary-800: #D2CBCB;
+	--clr-secondary-900: #ADA0A6;
+	--clr-accent-000:#7D938A;
+	
+	--ff-primary:"Roboto",sans-serif;
+	--ff-accent:"Lobster", sans-serif;
+}
+
+$radial180 :linear-gradient(180deg, hsla(0, 60%, 94%, 1) 0%, hsla(0, 11%, 85%, 1) 20%, hsla(0, 7%, 81%, 1) 40%, hsla(332, 7%, 65%, 1) 60%, hsla(155, 9%, 53%, 1) 80%);
+$radial360 :linear-gradient(360deg, hsla(0, 60%, 94%, 1) 0%, hsla(0, 11%, 85%, 1) 20%, hsla(0, 7%, 81%, 1) 40%, hsla(332, 7%, 65%, 1) 60%, hsla(155, 9%, 53%, 1) 80%);

@@ -1,0 +1,6 @@
+@each $pagina in accesorios, bazaar, contacto, horarios, indumentaria, sucursales{
+	.principal--#{$pagina}{
+		background-image:$radial360;
+	display:block;
+	width: 85%;}
+}
