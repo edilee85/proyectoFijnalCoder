@@ -1,0 +1,370 @@
+:root {
+  --clr-neutral-100: #191516;
+  --clr-primary-400: #F9E7E7;
+  --clr-primary-500: #DED6D6;
+  --clr-secondary-800: #D2CBCB;
+  --clr-secondary-900: #ADA0A6;
+  --clr-accent-000:#7D938A;
+  --ff-primary:"Roboto",sans-serif;
+  --ff-accent:"Lobster", sans-serif; }
+
+body {
+  font-family: var(--ff-primary);
+  background-image: linear-gradient(180deg, #f9e7e7 0%, #ddd5d5 20%, #d2cbcb 40%, #aca0a5 60%, #7c9289 80%);
+  color: var(--clr-neutral-100);
+  max-height: 100%;
+  max-width: 1300px;
+  margin: auto; }
+
+/*Mobile First Header Version Pantallas hasta 540px*/
+header {
+  min-height: 10vh;
+  max-width: 375px;
+  margin: auto;
+  background-image: linear-gradient(to bottom, #DED6D6, #7D938A); }
+  header .encabezado {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    align-items: center; }
+    header .encabezado__titulo1 h1 {
+      font-family: var(--ff-accent);
+      font-size: 2rem;
+      text-align: center; }
+    header .encabezado__titulo1 h2 {
+      font-family: var(--ff-primary);
+      font-size: 1rem;
+      text-align: center; }
+    header .encabezado__logo img {
+      height: 5rem; }
+
+/*Version Header Pantallas entre 541 y 768*/
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+  header {
+    min-height: 10vh;
+    max-width: 768px;
+    margin: auto; }
+    header .encabezado__titulo1 h1 {
+      font-size: 2.5rem; }
+    header .encabezado__titulo2 h2 {
+      font-size: 1.5rem; }
+    header .encabezado__logo img {
+      height: 8rem; } }
+
+/*Version Header Pantallas entre 769 y 1300*/
+@media only screen and (min-width: 769px) {
+  header {
+    min-height: 20vh;
+    max-width: 1300px;
+    margin: auto; }
+    header .encabezado__logo img {
+      height: 10rem; }
+    header .encabezado__titulo1 h1 {
+      font-size: 4rem; }
+    header .encabezado__titulo2 h2 {
+      font-size: 2rem; } }
+
+.navegador {
+  max-width: 1300px;
+  margin: auto; }
+  .navegador__item {
+    color: #191516; }
+
+section {
+  background-color: #7D938A;
+  color: #191516;
+  padding: 2rem;
+  margin: 2px;
+  position: relative;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .5rem;
+  transition: transform 500ms, background-color 300ms , color 300ms; }
+  section:hover {
+    transform: scale(1.05, 1.05);
+    background-color: #ADA0A6;
+    color: var(--clr-neutral-100);
+    padding: 2rem; }
+
+.principal {
+  min-height: 80vh;
+  width: 100%;
+  background-color: #F9E7E7;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  margin: auto;
+  max-width: 1300px;
+  grid-area: main; }
+  .principal__indumentaria {
+    grid-area: area1; }
+  .principal__bazaar {
+    grid-area: area2; }
+  .principal__accesorios {
+    grid-area: area3; }
+  .principal__sucursales {
+    grid-area: area5; }
+  .principal__horarios {
+    grid-area: area4; }
+  .principal__imagen {
+    margin: auto;
+    width: 100%; }
+
+.paddingtop-1 {
+  padding-top: 1rem; }
+
+/*MEDIA RESPONSIVE PARA PANTALLAS MAYORES A 700px*/
+@media only screen and (min-width: 768px) {
+  .principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "area1 area1 area2" "area3 area5 area2" "area3 area4 area4";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; } }
+
+.pie {
+  max-width: 1300px;
+  background-image: linear-gradient(to top, #DED6D6, #7D938A); }
+  .pie__legales {
+    color: black;
+    font-size: 0.5rem; }
+
+/*Version Header Pantallas entre 541 y 768*/
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+  .pie__legales {
+    font-size: 0.75rem; } }
+
+/*Version Header Pantallas entre 769 y 1300*/
+@media only screen and (min-width: 769px) {
+  .pie__legales {
+    font-size: 1rem; } }
+
+.principal--horarios {
+  display: block; }
+
+.tabla {
+  max-width: 1300px;
+  justify-content: center;
+  margin: auto;
+  min-height: 100vh;
+  background-image: radial-gradient(#ADA0A6, #F9E7E7);
+  padding-top: 20px; }
+  .tabla__Horarios {
+    font-size: 2rem;
+    border: 5px solid #7D938A;
+    padding: 10px; }
+  .tabla__cabecera {
+    font-family: Lobster;
+    font-size: 3rem;
+    text-align: center; }
+
+.tabla__horarios td, .tabla__horarios th {
+  padding: 10px;
+  border: 3px solid #7D938A; }
+
+.tabla__cuerpo td, .tabla__cuerpo th {
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+  font-size: 2rem; }
+
+@media only screen and (max-width: 768px) {
+  .tabla {
+    max-width: 768px;
+    justify-content: center;
+    margin: auto;
+    min-height: 100vh;
+    background-image: radial-gradient(#ADA0A6, #F9E7E7);
+    padding-top: 5px; }
+    .tabla__Horarios {
+      font-size: 1rem;
+      border: 2px solid #7D938A;
+      padding: 5px; }
+    .tabla__cabecera {
+      font-family: Lobster;
+      font-size: 1.1rem; }
+  .tabla__horarios td, .tabla__horarios th {
+    padding: 5px;
+    border: 2px solid #7D938A; }
+  .tabla__cuerpo td, .tabla__cuerpo th {
+    padding: 5px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 1rem; } }
+
+.principal--indumentaria .indumentaria__carrousel {
+  padding-top: 1vh; }
+
+.principal--indumentaria .indumentaria__imagen {
+  object-fit: contain;
+  max-height: 100vh; }
+
+.principal--bazaar .bazaar__carrousel {
+  padding-top: 1vh; }
+
+.principal--accesorios .accesorios__carrousel {
+  padding-top: 1vh; }
+
+.principal--accesorios .accesorios__texto {
+  color: #7D938A; }
+
+.principal--sucursales .sucursales__todas {
+  display: flex;
+  flex-direction: column; }
+
+.principal--sucursales .sucursales__mapa {
+  width: 100%; }
+
+.principal--sucursales .sucursales__location {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-family: "Lobster", sans-serif;
+  font-size: 1.5rem; }
+
+.principal--contacto {
+  background-image: linear-gradient(360deg, #f9e7e7 0%, #ddd5d5 20%, #d2cbcb 40%, #aca0a5 60%, #7c9289 80%);
+  display: block;
+  width: 85%; }
+
+#formulario {
+  width: 100%;
+  max-width: 1300px;
+  text-align: center;
+  margin: auto;
+  min-height: 100vh;
+  background-image: linear-gradient(180deg, #f9e7e7 0%, #ddd5d5 20%, #d2cbcb 40%, #aca0a5 60%, #7c9289 80%);
+  padding-top: 20px;
+  font-size: 1rem;
+  line-height: 1rem; }
+  #formulario .inputLinea {
+    width: 80%;
+    height: 1.5rem;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    border-radius: 4px; }
+  #formulario input:focus {
+    border: 3px solid black; }
+  #formulario label {
+    font-family: "Lobster"; }
+  #formulario textarea {
+    width: 80%;
+    height: 10rem;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none; }
+  #formulario select {
+    width: 80%;
+    padding: 5px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem; }
+  #formulario input[type=submit], #formulario input[type=reset] {
+    height: 2rem;
+    width: 80%;
+    border: none;
+    padding: 5px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px; }
+  #formulario input[type=checkbox], #formulario input[type=button] {
+    padding: 5px;
+    margin: 5px; }
+
+/*Version Header Pantallas entre 541 y 768*/
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+  #formulario {
+    font-size: 1.25rem;
+    line-height: 2rem; }
+    #formulario select {
+      width: 25%;
+      padding: 5px 15px;
+      margin: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem; }
+    #formulario input[type=submit], #formulario input[type=reset] {
+      height: 2rem;
+      width: 15rem;
+      padding: 5px 15px;
+      margin: 4px 2px;
+      font-size: 1.2rem; }
+    #formulario input[type=checkbox], #formulario input[type=button] {
+      padding: 5px;
+      margin: 5px; } }
+
+/*Version Header Pantallas entre 769 y 1300*/
+@media only screen and (min-width: 768px) {
+  #formulario {
+    width: 100%;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    line-height: 2rem; }
+    #formulario .inputLinea {
+      width: 50%;
+      height: 2rem;
+      padding: 1rem;
+      margin: 0.5rem;
+      border-radius: 4px; }
+    #formulario textarea {
+      width: 50%;
+      height: 10rem;
+      padding: 12px 20px;
+      border: 2px solid #ccc;
+      border-radius: 4px; }
+    #formulario select {
+      width: 25%;
+      padding: 5px 15px;
+      margin: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem; }
+    #formulario input[type=submit], #formulario input[type=reset] {
+      height: 2rem;
+      width: 15rem;
+      padding: 5px 15px;
+      margin: 4px 2px;
+      font-size: 1.2rem; }
+    #formulario input[type=checkbox], #formulario input[type=button] {
+      padding: 5px;
+      margin: 5px; } }
+
+.principal--accesorios {
+  background-image: linear-gradient(360deg, #f9e7e7 0%, #ddd5d5 20%, #d2cbcb 40%, #aca0a5 60%, #7c9289 80%);
+  display: block;
+  width: 85%; }
+
+.principal--bazaar {
+  background-image: linear-gradient(360deg, #f9e7e7 0%, #ddd5d5 20%, #d2cbcb 40%, #aca0a5 60%, #7c9289 80%);
+  display: block;
+  width: 85%; }
+
+.principal--contacto {
+  background-image: linear-gradient(360deg, #f9e7e7 0%, #ddd5d5 20%, #d2cbcb 40%, #aca0a5 60%, #7c9289 80%);
+  display: block;
+  width: 85%; }
+
+.principal--horarios {
+  background-image: linear-gradient(360deg, #f9e7e7 0%, #ddd5d5 20%, #d2cbcb 40%, #aca0a5 60%, #7c9289 80%);
+  display: block;
+  width: 85%; }
+
+.principal--indumentaria {
+  background-image: linear-gradient(360deg, #f9e7e7 0%, #ddd5d5 20%, #d2cbcb 40%, #aca0a5 60%, #7c9289 80%);
+  display: block;
+  width: 85%; }
+
+.principal--sucursales {
+  background-image: linear-gradient(360deg, #f9e7e7 0%, #ddd5d5 20%, #d2cbcb 40%, #aca0a5 60%, #7c9289 80%);
+  display: block;
+  width: 85%; }

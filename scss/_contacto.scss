@@ -1,0 +1,129 @@
+.principal--contacto{
+	background-image:$radial360;
+	display:block;
+	width: 85%
+}
+#formulario{
+	width: 100%;
+	max-width: 1300px;
+	text-align: center;
+	margin:auto;
+	min-height: 100vh;
+	background-image: $radial180;
+	padding-top: 20px;
+	font-size: 1rem;
+	line-height: 1rem;
+	.inputLinea{
+		width: 80% ;
+		height:1.5rem;
+		padding: 0.75rem;
+		margin:0.5rem;
+		border-radius: 4px;
+	}
+	input:focus{
+		border: 3px solid black;
+	}
+	label{
+		font-family: "Lobster";
+	}
+	textarea{
+		width: 80%;
+		height: 10rem;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		resize: none;
+	}
+	select {
+		width: 80%;
+		padding: 5px 15px;
+		margin:10px;
+		border: none;
+		border-radius: 4px;
+		font-size: 1rem;
+	}
+	input[type=submit], input[type=reset] {
+		height:2rem;
+		width: 80%;
+		border: none;
+		padding: 5px 15px;
+		text-decoration: none;
+		margin: 4px 2px;
+		cursor: pointer;
+		font-size: 1rem;
+		border-radius: 4px;
+	}
+	input[type=checkbox], input[type=button]{
+		padding:5px;
+		margin: 5px;
+	}
+}
+/*Version Header Pantallas entre 541 y 768*/
+@media only screen and (min-width: 541px) and (max-width: 767px){
+	#formulario{
+		font-size: 1.25rem;
+		line-height: 2rem;
+		select {
+			width: 25%;
+			padding: 5px 15px;
+			margin:10px;
+			border: none;
+			border-radius: 4px;
+			font-size: 1rem;
+		}
+		input[type=submit], input[type=reset] {
+			height:2rem;
+			width: 15rem;
+			padding: 5px 15px;
+			margin: 4px 2px;
+			font-size: 1.2rem;
+		}
+		input[type=checkbox], input[type=button]{
+			padding:5px;
+			margin: 5px;
+		}
+	}	
+}
+/*Version Header Pantallas entre 769 y 1300*/
+@media only screen and (min-width: 768px)/*and (max-width: 1300px)*/{
+	#formulario{
+		width: 100%;
+		padding-top: 20px;
+		font-size: 1.5rem;
+		line-height: 2rem;
+		.inputLinea{
+			width: 50% ;
+			height:2rem;
+			padding: 1rem;
+			margin:0.5rem;
+			border-radius: 4px;
+		}
+		textarea{
+			width: 50%;
+			height: 10rem;
+			padding: 12px 20px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+		}
+		select {
+			width: 25%;
+			padding: 5px 15px;
+			margin:10px;
+			border: none;
+			border-radius: 4px;
+			font-size: 1rem;
+		}
+		input[type=submit], input[type=reset] {
+			height:2rem;
+			width: 15rem;
+			padding: 5px 15px;
+			margin: 4px 2px;
+			font-size: 1.2rem;
+		}
+		input[type=checkbox], input[type=button]{
+			padding:5px;
+			margin: 5px;
+		}
+	}	
+}

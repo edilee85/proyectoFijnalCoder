@@ -1,0 +1,70 @@
+/*Mobile First Header Version Pantallas hasta 540px*/
+header{
+	min-height: 10vh;
+	max-width: 375px;
+	margin:auto;
+	background-image: linear-gradient(to bottom , $clr-primary-500 ,$clr-accent-000) ;
+	
+	.encabezado{
+		display:flex;
+		flex-direction: column;
+		padding: 1rem 1rem;
+		align-items: center;	
+		&__titulo1 h1{
+			font-family: var(--ff-accent);
+			font-size: 2rem;
+			text-align: center;
+		}
+		&__titulo1 h2{
+			font-family: var(--ff-primary);
+			font-size: 1rem;
+			text-align: center;
+		}
+		&__logo img{
+		height:5rem;
+		}
+	}
+
+}
+
+/*Version Header Pantallas entre 541 y 768*/
+@media only screen and (min-width: 541px) and (max-width: 768px){
+	header{
+		min-height: 10vh;
+		max-width: 768px;
+		margin:auto;
+			
+		.encabezado{
+			&__titulo1 h1{
+				font-size: 2.5rem;
+			}
+			&__titulo2 h2{
+				font-size: 1.5rem;
+			}
+			&__logo img{
+			height:8rem;
+			}			
+		}
+
+	}
+}
+/*Version Header Pantallas entre 769 y 1300*/
+@media only screen and (min-width: 769px) /*and (max-width: 1300px)*/{
+	header{
+		min-height: 20vh;
+		max-width: 1300px;
+		margin:auto;
+			
+		.encabezado{
+			&__logo {
+				img{height:10rem}
+			}
+			&__titulo1 {
+				h1 {font-size: 4rem}
+			}
+			&__titulo2 {
+				h2 {font-size: 2rem}
+			}
+		}
+	}
+}

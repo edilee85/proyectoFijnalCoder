@@ -1,0 +1,83 @@
+section{
+	background-color: $clr-accent-000;
+	color:$clr-neutral-100;
+	padding: 2rem;
+	margin: 2px;
+	position: relative;
+	// word-wrap: break-word;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .5rem;
+	transition: transform 500ms, background-color 300ms , color 300ms; 
+	&:hover{
+		transform: scale(1.05,1.05);
+		background-color: $clr-secondary-900;
+		color: var(--clr-neutral-100);
+		padding:2rem;
+	}
+	
+}
+.principal{
+	min-height: 80vh;
+	width: 100%;
+	background-color:$clr-primary-400;
+	margin-bottom:30px;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 10px;
+	margin:auto;
+	max-width: 1300px;
+	grid-area: main;
+	&__indumentaria{
+		grid-area: area1;
+		// background-image: url(../resources/img/iconoIndumentaria.png);
+		// background-repeat: no-repeat;
+		// background-size:33%;
+		// background-position: right bottom;
+		
+	}
+	&__bazaar{
+		grid-area: area2;
+		// background-image: url(../resources/img/iconoBazaar.png);
+		// background-repeat: no-repeat;
+		// background-size:33%;
+		// background-position: right bottom;
+	}
+	&__accesorios{
+		grid-area: area3;
+		// background-image: url(../resources/img/iconAccesorios.png);
+		// background-repeat: no-repeat;
+		// background-size:33%;
+		// background-position: right bottom;
+	}
+	&__sucursales{
+		grid-area: area5;
+	}
+	&__horarios{
+		grid-area: area4;
+	}
+	&__imagen{
+		margin:auto;
+		width:100%;
+	}
+}
+.paddingtop-1{
+	padding-top: 1rem
+}
+/*MEDIA RESPONSIVE PARA PANTALLAS MAYORES A 700px*/
+	@media only screen and (min-width: 768px){
+		.principal{
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas: 
+			"area1 area1 area2"
+			"area3 area5 area2"
+			"area3 area4 area4";
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+		}
+
+	}
+

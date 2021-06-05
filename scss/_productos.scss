@@ -1,0 +1,43 @@
+.principal--indumentaria{
+
+	.indumentaria__carrousel{
+		padding-top: 1vh;
+	}
+	.indumentaria__imagen{
+		object-fit: contain;
+		max-height: 100vh;
+	}
+}
+.principal--bazaar{
+
+	.bazaar__carrousel{
+		padding-top: 1vh;
+	}
+}
+.principal--accesorios{
+
+	.accesorios__carrousel{
+		padding-top: 1vh;
+	}
+	.accesorios__texto{
+		color:$clr-accent-000;
+	}
+}
+.principal--sucursales{
+	.sucursales__todas{
+		display:flex;
+		flex-direction: column;
+	}
+	.sucursales__mapa{
+		width:100%;
+	}
+	.sucursales__location{
+		display: block;
+		text-align: center;
+		margin: auto;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		font-family: $ff-accent ;
+		font-size: 1.5rem;
+	}
+}
