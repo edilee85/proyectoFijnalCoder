@@ -123,7 +123,11 @@ section {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "area1 area1 area2" "area3 area5 area2" "area3 area4 area4";
     grid-column-gap: 10px;
-    grid-row-gap: 10px; } }
+    grid-row-gap: 10px; }
+  .card-text {
+    font-size: 2rem; }
+  .card-title {
+    font-size: 3rem; } }
 
 .pie {
   max-width: 1300px;
