@@ -29,9 +29,9 @@ header {
     align-items: center; }
     header .encabezado__titulo1 h1 {
       font-family: var(--ff-accent);
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: center; }
-    header .encabezado__titulo1 h2 {
+    header .encabezado__titulo2 h2 {
       font-family: var(--ff-primary);
       font-size: 1rem;
       text-align: center; }
@@ -70,24 +70,8 @@ header {
   .navegador__item {
     color: #191516; }
 
-section {
-  background-color: #7D938A;
-  color: #191516;
-  padding: 2rem;
-  margin: 2px;
-  position: relative;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: .5rem;
-  transition: transform 500ms, background-color 300ms , color 300ms; }
-  section:hover {
-    transform: scale(1.05, 1.05);
-    background-color: #ADA0A6;
-    color: var(--clr-neutral-100);
-    padding: 2rem; }
-
 .principal {
-  min-height: 80vh;
+  min-height: 60vh;
   width: 100%;
   background-color: #F9E7E7;
   margin-bottom: 30px;
@@ -125,9 +109,25 @@ section {
     grid-column-gap: 10px;
     grid-row-gap: 10px; }
   .card-text {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .card-title {
-    font-size: 3rem; } }
+    font-size: 2.5rem; } }
+
+section {
+  background-color: #7D938A;
+  color: #191516;
+  padding: 2rem;
+  margin: 2px;
+  position: relative;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .5rem;
+  transition: transform 500ms, background-color 300ms , color 300ms; }
+  section:hover {
+    transform: scale(1.05, 1.05);
+    background-color: #ADA0A6;
+    color: var(--clr-neutral-100);
+    padding: 2rem; }
 
 .pie {
   max-width: 1300px;

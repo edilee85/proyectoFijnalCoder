@@ -1,24 +1,5 @@
-section{
-	background-color: $clr-accent-000;
-	color:$clr-neutral-100;
-	padding: 2rem;
-	margin: 2px;
-	position: relative;
-	// word-wrap: break-word;
-	background-clip: border-box;
-	border: 1px solid rgba(0,0,0,.125);
-	border-radius: .5rem;
-	transition: transform 500ms, background-color 300ms , color 300ms; 
-	&:hover{
-		transform: scale(1.05,1.05);
-		background-color: $clr-secondary-900;
-		color: var(--clr-neutral-100);
-		padding:2rem;
-	}
-	
-}
 .principal{
-	min-height: 80vh;
+	min-height: 60vh;
 	width: 100%;
 	background-color:$clr-primary-400;
 	margin-bottom:30px;
@@ -79,11 +60,31 @@ section{
 			grid-row-gap: 10px;
 		}
 		.card-text{
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 		.card-title{
-			font-size: 3rem;
+			font-size: 2.5rem;
 		}
 
 	}
 
+
+section{
+	background-color: $clr-accent-000;
+	color:$clr-neutral-100;
+	padding: 2rem;
+	margin: 2px;
+	position: relative;
+	// word-wrap: break-word;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .5rem;
+	transition: transform 500ms, background-color 300ms , color 300ms; 
+	&:hover{
+		transform: scale(1.05,1.05);
+		background-color: $clr-secondary-900;
+		color: var(--clr-neutral-100);
+		padding:2rem;
+	}
+	
+}
